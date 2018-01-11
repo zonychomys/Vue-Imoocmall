@@ -15,10 +15,6 @@ export default new Router({
       component: Index,
       children: [
         {
-          path: '',
-          component: Product
-        },
-        {
           path: 'product',
           component: Product
         },
@@ -27,6 +23,10 @@ export default new Router({
           component: Order
         }
       ]
-    }
+    },
+    {
+      path: '*',
+      redirect: '/'
+    },
   ]
 })
