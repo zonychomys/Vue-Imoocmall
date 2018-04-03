@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <script>
+    // 变量提升: 自动将变量的声明提升至代码的第一行
+    // var: 存在变量提升
+    // let: 不存在变量提升
+    /* 示例:
+      console.log(a);
+      var a = 1;
+      console.log(b);
+      let b = 2;
+    */
+
+    // 块作用域: 任何一对花括号中的语句集都属于一个块,
+    // 在这之中定义的所有变量在代码块外都是不可见的,我们称之为块级作用域
+    // let: let声明的变量只能作用于块级作用域
+    // var: var声明的变量能够作用于函数级域作用域, 即能够在块作用域之外访问
+    /* 示例:
+    {
+      var c = 3;
+      let d = 4;
+    }
+    console.log(c);
+    console.log(d);
+    */
+
+    // 变量与常量
+    // let: let用于声明变量
+    // const: const用于声明常量
+    /* 示例:
+      let e = 5;
+      const f = 6;
+      console.log(e++);
+      console.log(f++);
+    */
+  </script>
+</body>
+</html>

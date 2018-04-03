@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <script>
+    let checkLogin = function() {
+      new Promise(function(resolve,reject){
+        // resolve/reject分别代表执行成功/失败后执行的回调
+        let flat = document.cookie.indexOf("userId")>-1?true:false;
+        if(flag){
+          resolve({
+            status:0,
+            result:true
+          })
+        }else{
+          reject('error');
+        }
+      })
+    }
+  </script>
+</body>
+</html>

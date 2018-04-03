@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <script>
+    var arr = [3, 6, 9];
+
+    // ES5写法
+    var newES5Arr = arr.map(function(item) {
+      return item**2
+    });
+    console.log(newES5Arr);
+
+    // ES6箭头函数写法
+    // 箭头函数不存在作用域,其内部的this与外部保持一致
+    var newES6Arr = arr.map((item)=>{
+      return item**2
+    });
+    console.log(newES6Arr);
+  </script>
+</body>
+</html>
